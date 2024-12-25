@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.entry-section {
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 60%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#entries {
+    margin-top: 30px;
+}
+
+#entry-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#entry-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#entry-list li p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    flex: 1;
+}
+
+#entry-list li span {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+#entry-list li .button-container {
+    display: flex;
+    gap: 10px;
+}
+
+#entry-list li button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#entry-list li button.edit {
+    color: #007BFF;
+}
+
+#entry-list li button.delete {
+    color: #FF5733;
+}
+
+body.dark-mode button {
+    background-color: #2e2e2e;
+    color: #f0f0f0;
+}
+
+body.dark-mode #entry-list li {
+    background-color: #444;
+}
+
+body.dark-mode #entry-list li button {
+    color: #f0f0f0;
+}
